@@ -86,5 +86,17 @@
     "tagType": "best seller",
     "features": ["Email templates", "Automation", "Analytics"],
     "image": "https://i.ibb.co.com/dsz8mv9h/email-marketing-icon-style-vector.jpg"
+  },
+   {
+    "id": 7,
+    "name": "Coding Bootcamp",
+    "description": "Learn full-stack development with hands-on projects.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Live classes", "Projects", "Certificate"],
+    "image": "https://i.ibb.co.com/Pv5mnm0P/coding-bootcamp-icon-line-vector-600nw-2614857131.webp"
   }
+  
 ]

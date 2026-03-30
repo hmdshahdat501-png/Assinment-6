@@ -4,7 +4,18 @@ import Nodata from '../Nodata/Nodata';
 
 
 const Addcard = ({ addprodect, setaddprodect }) => {
-    console.log(addprodect);
+  
+const deleltdata = (id) =>{
+    const updectdat = addprodect.filter( scard => scard.id !== id )
+    setaddprodect(updectdat)
+};
+
+const totalPrice = addprodect.reduce((total, item) => {
+    return total + item.price
+}, 0)
+const cahakout = () => {
+    setaddprodect ([])
+}
 
     return (
         <div className='mx-auto max-w-6xl'>
@@ -20,11 +31,15 @@ const Addcard = ({ addprodect, setaddprodect }) => {
                    </div>
                   </div>
                    <div>
-                    <button className='btn text-pink-600'>Remove</button>
+                    <button onClick={()=> deleltdata (datas.id)} className='btn text-pink-600'>Remove</button>
                    </div>
                 </div>
             ))
            }
+           <div>
+             <button className='btn w-full bg-green-600 text-white text-2xl mt-8'>Totle Price : $ {totalPrice}</button>
+           <button onClick={cahakout}  className='btn w-full bg-pink-600 text-white text-2xl mt-8'>ChakOut</button>
+           </div>
         </div>
     );
 };
