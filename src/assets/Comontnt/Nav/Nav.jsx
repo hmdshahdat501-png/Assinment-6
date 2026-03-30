@@ -4,9 +4,9 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Nav = () => {
     return (
-        <div className='flex justify-between mt-6 items-center'> 
+        <div className='flex justify-between mt-6 items-center container mx-auto'> 
             <h2 className='text-5xl font-bold text-blue-700'>DigiTolls</h2>
-            <ul className='flex gap-4'>
+            <ul className='flex gap-4 font-bold text-xl'>
                 <li>Products</li>
                 <li>Features</li>
                 <li>Pricing</li>
@@ -21,7 +21,7 @@ const Nav = () => {
 </div>
 <div className='flex items-center gap-4'>
       <p>Login</p>
-            <button className='btn  bg-linear-to-r from-purple-500 to-blue-500 text-white'>Get Started</button>
+            <button className='btn rounded-full  bg-linear-to-r from-purple-500 to-blue-500 text-white'>Get Started</button>
 </div>
             </div>
           

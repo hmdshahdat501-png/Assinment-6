@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with modern templates and ATS optimization.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+     "image": "https://i.ibb.co.com/pr0jnRkg/assessment-flat-grey-circle-style-icon-vector.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build your personal portfolio website easily with pre-built sections.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Responsive design", "SEO optimized", "Easy customization"],
+    "image": "https://i.ibb.co.com/BV29Ym7N/10456439.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Generator",
+    "description": "Generate high-quality content using AI tools.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI writing", "Blog generator", "SEO keywords"],
+    "image": "https://i.ibb.co.com/b5fVYHBX/pngtree-ai-generated-content-icon-png-image-20611229.png"
+  },
+  {
+    "id": 4,
+    "name": "E-commerce Starter Pack",
+    "description": "Launch your online store with ready templates and payment system.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Product pages", "Payment integration", "Cart system"],
+    "image": "https://i.ibb.co.com/6c3th7qp/17247495.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Toolkit",
+    "description": "Boost your social media growth with automation tools.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Post scheduler", "Analytics", "Auto posting"],
+    "image": "https://i.ibb.co.com/HDsG5DWP/images-2.png"
+  },
+  {
+    "id": 6,
+    "name": "Graphic Design Pack",
+    "description": "Access premium design resources and templates.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["500+ icons", "Editable templates", "Figma support"],
+    "image": "https://i.ibb.co.com/HLWnrfXm/4668243.png"
+  },
+  {
+    "id": 7,
+    "name": "Coding Bootcamp",
+    "description": "Learn full-stack development with hands-on projects.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Live classes", "Projects", "Certificate"],
+    "image": "https://i.ibb.co.com/Pv5mnm0P/coding-bootcamp-icon-line-vector-600nw-2614857131.webp"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Pro",
+    "description": "Create and manage email campaigns effectively.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Email templates", "Automation", "Analytics"],
+    "image": "https://i.ibb.co.com/dsz8mv9h/email-marketing-icon-style-vector.jpg"
+  }
+]
