@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Hero = ({btnclick, setBtnclick }) => {
+const Hero = ({btnclick, setBtnclick, addprodect }) => {
     
     return (
         <div className='mt-8'>
@@ -28,7 +28,7 @@ const Hero = ({btnclick, setBtnclick }) => {
                    <br /> to boost your productivity and creativity.</p>
                 <div className='flex gap-4 justify-center'>
                     <button onClick={()=> setBtnclick('products')} className={`btn rounded-full px-6 ${btnclick === 'products' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Products</button>
-                    <button onClick={()=> setBtnclick('cart')} className={`btn rounded-full px-6 ${btnclick === 'cart' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Cart (2)</button>
+                    <button onClick={()=> setBtnclick('cart')} className={`btn rounded-full px-6 ${btnclick === 'cart' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Cart ({addprodect.length})</button>
                 </div>
             </div>
         </div>

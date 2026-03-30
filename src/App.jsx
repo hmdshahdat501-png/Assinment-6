@@ -6,17 +6,21 @@ import Hero from './assets/Comontnt/Hero/Hero'
 
 import { CgRadioCheck } from 'react-icons/cg'
 import Card from './assets/Comontnt/Card/Card'
+import Addcard from './assets/Comontnt/Addcard/Addcard'
 const res = fetch('/public/data.json').then(res => res.json())
 function App() {
  
-const [btnclick, setBtnclick] = useState('products')            
+const [btnclick, setBtnclick] = useState('products') 
+let [addprodect, setaddprodect] = useState([]);         
   return (
     <>
   
-     <Nav></Nav>
+     <Nav addprodect = {addprodect} ></Nav>
      <Banner></Banner>
-     <Hero btnclick = {btnclick} setBtnclick = {setBtnclick}  ></Hero>
-      <Card res = {res} ></Card>
+     <Hero btnclick = {btnclick} setBtnclick = {setBtnclick} addprodect = {addprodect}  ></Hero>
+      {
+        btnclick === 'products' ? <Card res = {res} addprodect = {addprodect} setaddprodect ={setaddprodect}  ></Card> : <Addcard addprodect = {addprodect} setaddprodect ={setaddprodect}></Addcard>
+      }
    
 
     </>

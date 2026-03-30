@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 
-const Cart = ({datas}) => {
+const Cart = ({datas, addprodect, setaddprodect}) => {
+    const handlebtn = () =>{
+        
+        setAddcard('addtocard ')
+        setaddprodect([...addprodect, datas])
+    }
     const [addcard, setAddcard] = useState('buynow')
     return (
-        <div className='bg-white border-2 border-gray-200 p-4 rounded-lg space-y-4' >
+        <div className='bg-white border-2 border-gray-200 p-4 rounded-lg space-y-4 mt-16' >
             <div className='flex justify-between'>
                  <div className='p-4 bg-gray-100 w-35 rounded-full '><img src={datas.image} alt="" /></div>
                  <div className='bg-red-300 w-fit h-fit px-4 py-2 font-bold text-red-600 rounded-full'>{datas.tag}</div>
@@ -20,7 +25,7 @@ const Cart = ({datas}) => {
           </li>
         ))}
       </ul>
-      <button onClick={() => setAddcard('addtocard ')} className={`btn w-full rounded-full text-xl p-8 ${addcard === 'buynow' ? 'bg-red-500' : 'bg-green-500'}`}>{addcard === 'buynow' ? 'Buy Now' : 'Add To Card'}</button>
+      <button onClick={handlebtn} className={`btn w-full rounded-full text-xl p-8 text-white ${addcard === 'buynow' ? 'bg-red-500' : 'bg-green-500'}`}>{addcard === 'buynow' ? 'Buy Now' : 'Add To Card'}</button>
         </div>
     );
 };
