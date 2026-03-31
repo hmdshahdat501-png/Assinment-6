@@ -9,6 +9,8 @@ import Card from './assets/Comontnt/Card/Card'
 import Addcard from './assets/Comontnt/Addcard/Addcard'
 import Started from './assets/Comontnt/Started/Started'
 import Simple from './assets/Comontnt/Simple/Simple'
+import Upnav from './assets/Comontnt/Upnav/Upnav'
+import Fotter from './assets/Comontnt/Upnav/Footer/Fotter'
 const res = fetch('/public/data.json').then(res => res.json());
 const crite = fetch('/public/card.json').then(res => res.json())
 function App() {
@@ -27,6 +29,8 @@ let [addprodect, setaddprodect] = useState([]);
       }
     <Started></Started>
     <Simple crite = {crite} ></Simple>
+    <Upnav></Upnav>
+    <Fotter></Fotter>
     
      
 
