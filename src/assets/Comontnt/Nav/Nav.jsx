@@ -2,7 +2,7 @@ import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 
 
-const Nav = (addprodect) => {
+const Nav = ({addprodect}) => {
     return (
         <div className='flex justify-between mt-6 items-center container mx-auto'> 
             <h2 className='text-5xl font-bold text-blue-700'>DigiTolls</h2>

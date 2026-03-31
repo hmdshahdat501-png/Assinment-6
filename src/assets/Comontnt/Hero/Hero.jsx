@@ -4,7 +4,8 @@ const Hero = ({btnclick, setBtnclick, addprodect }) => {
     
     return (
         <div className='mt-8'>
-           <div className='flex justify-around bg-linear-to-bl from-violet-500 to-fuchsia-500 py-4 px-16 '>
+          <div className=' bg-linear-to-bl from-violet-500 to-fuchsia-500 py-4 px-16 '>
+             <div className='flex justify-around container mx-auto'>
 
             <div className=''>
                 
@@ -22,13 +23,14 @@ const Hero = ({btnclick, setBtnclick, addprodect }) => {
                 <p className='text-xl text-white'>Rating</p>
             </div>
            </div>
+          </div>
             <div className='mx-auto container text-center mt-20 space-y-4'>
                 <h2 className='text-6xl font-bold'>Premium Digital Tools</h2>
                 <p className='text-xl text-gray-400'>Choose from our curated collection of premium digital products designed
                    <br /> to boost your productivity and creativity.</p>
                 <div className='flex gap-4 justify-center'>
-                    <button onClick={()=> setBtnclick('products')} className={`btn rounded-full px-6 ${btnclick === 'products' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Products</button>
-                    <button onClick={()=> setBtnclick('cart')} className={`btn rounded-full px-6 ${btnclick === 'cart' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Cart ({addprodect.length})</button>
+                    <button onClick={()=> setBtnclick('products')} className={`btn rounded-full px-6 hover:scale-110 ${btnclick === 'products' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Products</button>
+                    <button onClick={()=> setBtnclick('cart')} className={`btn rounded-full px-6 hover:scale-110 ${btnclick === 'cart' ? ' bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white' : ''}`}>Cart ({addprodect.length})</button>
                 </div>
             </div>
         </div>

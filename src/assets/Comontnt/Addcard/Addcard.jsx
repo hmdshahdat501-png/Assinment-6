@@ -1,5 +1,6 @@
 import React from 'react';
 import Nodata from '../Nodata/Nodata';
+import { toast } from 'react-toastify';
 
 
 
@@ -8,6 +9,16 @@ const Addcard = ({ addprodect, setaddprodect }) => {
 const deleltdata = (id) =>{
     const updectdat = addprodect.filter( scard => scard.id !== id )
     setaddprodect(updectdat)
+   toast.warn('🦄 Delelt Card Suecssfull', {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "colored",
+});
 };
 
 const totalPrice = addprodect.reduce((total, item) => {
@@ -15,6 +26,16 @@ const totalPrice = addprodect.reduce((total, item) => {
 }, 0)
 const cahakout = () => {
     setaddprodect ([])
+     toast.success('🦄 Chakout All Prodect', {
+position: "top-center",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "colored",
+});
 }
 
     return (
