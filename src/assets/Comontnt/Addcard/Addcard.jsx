@@ -43,8 +43,8 @@ theme: "colored",
             <h2 className='text-4xl  font-bold text-center lg:text-start mt-4'>Your Card</h2>
            {
             addprodect.length === 0 ? <Nodata></Nodata> : addprodect.map((datas, index) => (
-                <div key={index} className='flex justify-between items-center bg-gray-200 p-4 rounded-lg mt-4 m-4 lg:m-0'>
-                  <div className='flex gap-6 items-center '>
+                <div key={index} className='flex justify-between items-center bg-gray-200  p-4 m-4 rounded-lg lg:mt-4'>
+                  <div className='flex gap-6 items-center'>
                      <img className='w-15 bg-white rounded-full p-1 lg:w-30' src = {datas.image} alt="" />
                    <div className='space-y-2'>
                     <h2 className='text-xl font-bold lg:2xl'>{datas.name}</h2>
