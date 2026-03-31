@@ -17,7 +17,7 @@ theme: "colored"
     }
     const [addcard, setAddcard] = useState('buynow')
     return (
-        <div className='bg-white border-2 border-gray-200 p-4 rounded-lg space-y-4 mt-16' >
+        <div className='bg-white border-2 border-gray-200 p-4 rounded-lg space-y-4 mt-16 m-4' >
             <div className='flex justify-between'>
                  <div className='p-4 bg-gray-100 w-35 rounded-full '><img src={datas.image} alt="" /></div>
                  <div className= {`w-fit h-fit px-4 py-2 font-bold rounded-full uppercase ${datas.tag === 'popular' ? 'bg-yellow-200 text-yellow-500' : datas.tag === 'best seller' ? 'bg-purple-200 text-purple-500' : 'bg-green-200 text-green-500' }`}>{datas.tag}</div>

@@ -5,7 +5,7 @@ const Card = ({res, addprodect, setaddprodect}) => {
     const data = use(res)
     
     return (
-        <div className='grid grid-cols-3 container mx-auto gap-6'>
+        <div className='grid grid-cols-1 container mx-auto gap-6 lg:grid-cols-3'>
           {
           data.map(datas => <Cart
              datas = {datas} 

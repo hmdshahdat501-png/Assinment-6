@@ -7,7 +7,7 @@ const Fotter = () => {
     return (
         <div className='bg-black'>
         <div className='mx-auto container py-20'>
-        <div className='flex justify-between text-white'>
+        <div className=' text-white grid lg:grid-cols-4  sm: grid-cols-2 gap-16 pl-8'>
             <div>
                 <h2 className='text-4xl font-bold'>DigiTools</h2>
                 <p className='font-normal mt-4'>Premium digital tools for creators,<br /> professionals, and businesses. Work <br />smarter with our suite of powerful tools.</p>
@@ -51,9 +51,9 @@ const Fotter = () => {
         </div>
         <div className='text-white  mt-20'>
             <hr />
-            <div className='flex justify-between mt-10'>
+            <div className='mt-10 text-center lg:flex justify-between'>
                 <p>© 2026 Digitools. All rights reserved.</p>
-                <ul className='flex gap-4'><li>Privacy Policy</li> <li> Terms of Service  </li> <li> Cookies</li></ul>              
+                <ul className='flex gap-4 justify-center mt-4'><li>Privacy Policy</li> <li> Terms of Service  </li> <li> Cookies</li></ul>              
             </div>
         </div>
         </div>

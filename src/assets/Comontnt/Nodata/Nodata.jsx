@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCartShopping } from "react-icons/fa6";
 const Nodata = () => {
     return (
-        <div className='text-center flex justify-center flex-col mt-8 bg-gray-300  rounded-lg'>
+        <div className='text-center flex justify-center flex-col mt-8 bg-gray-300  rounded-lg m-4 p-8 lg:m-0'>
            
            <div className='mx-auto opacity-40 mt-16'>
              <FaCartShopping size={200} />

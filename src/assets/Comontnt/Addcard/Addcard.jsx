@@ -40,14 +40,14 @@ theme: "colored",
 
     return (
         <div className='mx-auto max-w-6xl'>
-            <h2 className='text-4xl  font-bold'>Your Card</h2>
+            <h2 className='text-4xl  font-bold text-center lg:text-start mt-4'>Your Card</h2>
            {
             addprodect.length === 0 ? <Nodata></Nodata> : addprodect.map((datas, index) => (
-                <div key={index} className='flex justify-between items-center bg-gray-200 p-4 rounded-lg mt-4'>
+                <div key={index} className='flex justify-between items-center bg-gray-200 p-4 rounded-lg mt-4 m-4 lg:m-0'>
                   <div className='flex gap-6 items-center '>
-                     <img className='w-25 bg-white rounded-full p-1' src = {datas.image} alt="" />
+                     <img className='w-15 bg-white rounded-full p-1 lg:w-30' src = {datas.image} alt="" />
                    <div className='space-y-2'>
-                    <h2 className='text-3xl font-bold'>{datas.name}</h2>
+                    <h2 className='text-xl font-bold lg:2xl'>{datas.name}</h2>
                     <p className='text-xl text-gray-600'> ${datas.price}</p>
                    </div>
                   </div>
@@ -58,7 +58,7 @@ theme: "colored",
             ))
            }
            <div>
-             <button className='btn w-full bg-green-600 text-white text-2xl mt-8'>Totle Price : $ {totalPrice}</button>
+             <button className='btn w-full bg-green-600 text-white text-xl mt-8 lg:2xl'>Totle Price : $ {totalPrice}</button>
            <button onClick={cahakout}  className='btn w-full bg-pink-600 text-white text-2xl mt-8'>ChakOut</button>
            </div>
         </div>
