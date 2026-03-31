@@ -11,8 +11,8 @@ import Simple from './assets/Comontnt/Simple/Simple'
 import Upnav from './assets/Comontnt/Upnav/Upnav'
 import Fotter from './assets/Comontnt/Upnav/Footer/Fotter'
 
-const res = fetch('/public/data.json').then(res => res.json());
-const crite = fetch('/public/card.json').then(res => res.json())
+const res = fetch('/data.json').then(res => res.json());
+const crite = fetch('/card.json').then(res => res.json())
 function App() {
  
 const [btnclick, setBtnclick] = useState('products') 
